@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/d5f5010b47.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <nav class="nav">
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <h1>Portfolio.</h1>
+            </div>
+                <ul class="nav-menu">
+                    <li><a href="#" id="home">HOME</a></li>
+                    <li><a href="#about" >ABOUT</a></li>
+                    <li><a href="#skill" >SKILL</a></li>
+                    <li><a href="#work" >WORK</a></li>
+                    <li><a href="#contact" >CONTACT</a></li>
+                    
+                </ul>
+                <div id="bar-icon" onclick="toggleMenu()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                
+        </div>
+    </nav>
+    <section>
+        <div class="home">
+            <div class="home-text">
+                <div class="text-1">Hello, My name is</div>
+                <div class="text-2">Abdul Muyeed</div>
+                <div class="text-3">I am a  <span class="red">Student</span></div>
+            </div>
+        </div>
+    </section>
+    <div class="about" id="about">
+        <div class="about-title">
+            <h1 class="title">ABOUT ME</h1>
+        </div>
+        <div class="content">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum. At volutpat diam ut venenatis tellus in metus vulputate. Ut sem viverra aliquet eget sit amet tellus cras adipiscing. Dictum non consectetur a erat. Semper quis lectus nulla at volutpat. Nunc eget lorem dolor sed viverra ipsum nunc. Ac tortor vitae purus faucibus ornare suspendisse. Proin nibh nisl condimentum id venenatis a condimentum vitae sapien. Enim blandit volutpat maecenas volutpat blandit aliquam etiam.
+            </p>
+        </div>
+        
+    </div>
+    <div class="skill" id="skill">
+        <div class="my-skill">
+            <div class="skill-title">
+                <h1>MY SKILL</h1>
+            </div>
+            <div class="box-content">
+                <div class="box">
+                    <i class="fa-brands fa-html5"></i>
+                    <h1>
+                        HTML5
+                    </h1>
+        
+                </div>
+                <div class="box">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h1>
+                        CSS3
+                    </h1>
+        
+                </div>
+                <div class="box">
+                    <i class="fa-brands fa-square-js"></i>
+                    <h1>
+                        JavaScript
+                    </h1>
+        
+                </div>
+                <div class="box">
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <h1>
+                        BootStrap
+                    </h1>
+        
+                </div>
+                <div class="box">
+                    <i class="fa-brands fa-python"></i>
+                    <h1>
+                        Python
+                    </h1>
+        
+                </div>
+                <div class="box">
+                    <i class="fa-brands fa-php"></i>
+                    <h1>
+                        PHP
+                    </h1>
+        
+                </div>
+            
+            
+        </div>
+    </div>
+    <div class="my-work" id="work">
+        <div class="work-title">
+            <h1 class="title">My Work</h1>
+        </div>
+        <div class="work-content">
+                <div class="w-box">
+                    <img src="images/image.jpg" alt="">
+                </div>
+                <div class="w-box">
+                    <img src="images/image.jpg" alt="">
+                </div>
+                
+                
+                <div class="w-box">
+                    <img src="images/image.jpg" alt="">
+                </div>
+                
+                
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <div class="contact-form">
+            <h1>Contect Us</h1>
+            <p >We are available 24/7. Leave us a message.</p>
+            
+            <form action="contact.php" method="post" onsubmit="" >
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" id="email" placeholder="E-mail" required>
+            <input type="text" name="subject" placeholder="Write a Subject" id="subject" required>
+            <textarea name="sms" id="message" cols="30" rows="10">
+
+            </textarea>
+            <?php include 'sms.php'; ?>
+            
+            <input type="submit" value="submit" class="btn">
+        </form>
+        </div>
+        <div class="form-img">
+            <img src="images/image.jpg" alt="">
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
